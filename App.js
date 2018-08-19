@@ -5,7 +5,8 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Handerblad (React Native)</Text>
+        <Text style={styles.header}>Handerblad</Text>
+        <Text style={styles.text}>(React Native)</Text>
       </View>
     );
   }
@@ -14,8 +15,17 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#900',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  header: {
+    fontSize: 46,
+    color: '#fff'
+  },
+  text: {
+    fontSize: 26,
+    color: '#fff'
+  }
+
 });
